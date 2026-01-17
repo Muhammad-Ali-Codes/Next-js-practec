@@ -1,11 +1,13 @@
-const express = require('express');
-const userdata = require('./userData');
+const http = require('http');
+const fs = require('fs');
+const { log } = require('console');
 
-const app = express();
 
-app.use('/user', userdata);
 
-const port = 30001;
-app.listen(port, () => {
-  console.log(`http://localhost:${port}`);
-});
+const server = http.createServer((req,res) => {
+    console.log
+})
+
+server.listen(3000, () => {
+  console.log("server is listening on port 3000");
+})
